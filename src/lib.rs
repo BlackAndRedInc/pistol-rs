@@ -7,13 +7,13 @@ use std::collections::HashMap;
 use std::fmt;
 use std::net::{IpAddr, Ipv4Addr, Ipv6Addr};
 
-mod errors;
-mod fingerprint;
-mod flood;
-mod layers;
-mod ping;
-mod scan;
-mod utils;
+pub mod errors;
+pub mod fingerprint;
+pub mod flood;
+pub mod layers;
+pub mod ping;
+pub mod scan;
+pub mod utils;
 
 #[derive(Debug, Clone, Copy)]
 pub enum PingStatus {
